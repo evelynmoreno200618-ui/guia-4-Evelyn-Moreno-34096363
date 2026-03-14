@@ -1,0 +1,23 @@
+real horas,valor_hora,salario
+caracter seguir
+
+inicio
+    seguir <- 'S'
+    
+    mientras(seguir = 'S') o (seguir = 's') haga
+    
+        escriba "Horas trabajadas"
+        lea horas
+        
+        escriba "Valor por hora"
+        lea valor_hora
+        
+        salario <- horas * valor_hora
+        
+        escriba "Salario: ",salario
+        
+        escriba "Desea ingresar otro trabajador (S/N)"
+        lea seguir
+        
+    fin mientras
+fin

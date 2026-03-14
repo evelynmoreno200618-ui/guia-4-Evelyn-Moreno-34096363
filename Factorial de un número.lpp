@@ -1,0 +1,16 @@
+entero numero, i, factorial
+
+inicio
+    escriba "Ingrese un numero"
+    lea numero
+    
+    factorial <- 1
+    i <- 1
+    
+    mientras(i <= numero) haga
+        factorial <- factorial * i
+        i <- i + 1
+    fin mientras
+    
+    escriba "El factorial es ",factorial
+fin

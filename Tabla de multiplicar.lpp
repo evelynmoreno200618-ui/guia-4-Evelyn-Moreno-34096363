@@ -1,0 +1,14 @@
+entero numero, i
+
+inicio
+    escriba "Ingrese el numero de la tabla"
+    lea numero
+    
+    i <- 1
+    
+    mientras(i <= 10) haga
+        escriba numero," x ",i," = ",numero*i
+        llamar nueva_linea
+        i <- i + 1
+    fin mientras
+fin

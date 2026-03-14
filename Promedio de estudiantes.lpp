@@ -1,0 +1,47 @@
+entero codigo
+cadena [25 ]nombre
+real nota1,nota2,nota3,promedio
+entero aprobaron,reprobaron,contador
+real suma_promedios
+
+inicio
+    aprobaron <- 0
+    reprobaron <- 0
+    contador <- 0
+    suma_promedios <- 0
+    
+    mientras(contador < 3) haga
+    
+        escriba "Codigo"
+        lea codigo
+        
+        escriba "Nombre"
+        lea nombre
+        
+        escriba "Nota 1"
+        lea nota1
+        
+        escriba "Nota 2"
+        lea nota2
+        
+        escriba "Nota 3"
+        lea nota3
+        
+        promedio <- (nota1 + nota2 + nota3) / 3
+        
+        suma_promedios <- suma_promedios + promedio
+        
+        si(promedio >= 3) entonces
+            aprobaron <- aprobaron + 1
+        sino
+            reprobaron <- reprobaron + 1
+        fin si
+        
+        contador <- contador + 1
+        
+    fin mientras
+    
+    escriba "Aprobaron: ",aprobaron
+    escriba "Reprobaron: ",reprobaron
+    escriba "Promedio del grupo: ",suma_promedios/contador
+fin
