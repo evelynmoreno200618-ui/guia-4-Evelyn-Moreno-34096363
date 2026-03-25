@@ -1,0 +1,32 @@
+Cadena [20] usuarioCorrecto
+Cadena [20] claveCorrecta
+Cadena [20] usuario
+Cadena [20] clave
+Entero intentos
+
+Inicio
+    usuarioCorrecto <- "evelyn"
+    claveCorrecta <- "1254"
+    intentos <- 0
+
+    Mientras intentos < 3 Haga
+        Escriba "Ingrese usuario:"
+        Lea usuario
+        Escriba "Ingrese clave:"
+        Lea clave
+
+        Si (usuario = usuarioCorrecto) Y (clave = claveCorrecta) Entonces
+            Escriba "Acceso concedido"
+            intentos <- 4 
+        Sino
+            Escriba "Datos incorrectos"
+            Llamar Nueva_Linea 
+            intentos <- intentos + 1
+        Fin Si
+    Fin Mientras
+
+    Si intentos = 3 Entonces
+        Escriba "Acceso bloqueado"
+    Fin Si
+
+Fin

@@ -1,0 +1,17 @@
+Entero numero, suma
+
+Inicio
+    suma <- 0
+
+    Escriba "Ingrese un numero (0 para terminar): "
+    Lea numero
+
+    Mientras numero <> 0 Haga
+        suma <- suma + numero
+        Escriba "Ingrese otro numero (0 para terminar): "
+        Lea numero
+    Fin Mientras
+
+    Escriba "La suma total es: "
+    Escriba suma
+Fin

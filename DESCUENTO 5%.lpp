@@ -1,0 +1,33 @@
+Real valor_compra, descuento, total_a_pagar
+Cadena [2] respuesta
+
+Inicio
+    respuesta <- "S"
+
+    Mientras (respuesta = "S") o (respuesta = "s") Haga
+        Escriba "Ingrese el valor de la compra: "
+        Lea valor_compra                
+
+        descuento <- 0
+
+        Si valor_compra > 1000 Entonces
+            descuento <- valor_compra * 0.05
+        Fin Si
+
+        total_a_pagar <- valor_compra - descuento
+
+        Escriba "El descuento aplicado es: "
+        Escriba descuento
+        Llamar Nueva_Linea
+        
+        Escriba "El valor total a pagar es: "
+        Escriba total_a_pagar
+        Llamar Nueva_Linea
+
+        Escriba "¿Desea registrar una nueva compra? (S/N): "
+        Lea respuesta
+        Llamar Nueva_Linea
+    Fin Mientras
+
+    Escriba "Fin del programa"
+Fin
